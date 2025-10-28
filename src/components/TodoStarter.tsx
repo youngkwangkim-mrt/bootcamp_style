@@ -28,6 +28,9 @@ const Header = styled.header`
      - justify-content: ???
      - align-items: ???
   */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   /* 기본 스타일 제공 (수정 불필요) */
   width: 100%;
@@ -58,6 +61,10 @@ const InputForm = styled.form`
      - ???: ??? // input과 버튼 사이 간격 12px
   */
 
+
+  display: flex;
+  gap: 12px;
+
   /* 기본 스타일 제공 (수정 불필요) */
   width: 100%;
   max-width: 800px;
@@ -67,6 +74,8 @@ const InputForm = styled.form`
     /* 🎯 필요한 속성:
        - ???: ??? (남은 공간 차지)
     */
+
+    flex: 1;
 
     /* 기본 스타일 제공 (수정 불필요) */
     padding: 14px 20px;
@@ -123,6 +132,10 @@ const TodoGrid = styled.div`
      - grid-template-columns: repeat(???, minmax(???, ???))
      - gap: ??? // 간격 20px
   */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 
   /* 기본 스타일 제공 (수정 불필요) */
   width: 100%;
@@ -185,6 +198,10 @@ const CardContent = styled.div`
      - gap: ??? // 간격 12px
   */
 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
   /* 기본 스타일 제공 (수정 불필요) */
   margin-bottom: 16px;
 
@@ -210,6 +227,10 @@ const CardActions = styled.div`
      - justify-content: ???
      - align-items: ???
   */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   /* 기본 스타일 제공 (수정 불필요) */
   padding-top: 12px;
